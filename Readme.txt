@@ -10,6 +10,7 @@ Instructions:
 - The bigger Katos are slower but alot heavier and the smaller Katos are fast and light.
 - If two Katos of the same type touch a new Kato will be created with the average traits of its parents.
 - If two Katos of different types touch carnage will ensue.
+- This game has a rudimentary day and night cycle. Notice how the Kato's have adapted to this rythm.
 
 I tried my best to optimize this game as much as I can. I took this chance to try out a Mesh Animator asset i have been meaning to experiment with that offloads animation overhead to the GPU.
 
