@@ -196,7 +196,7 @@ public class KatoManager : SerializedMonoBehaviour
             _NavMeshAgent.enabled = false;
             _Collider.isTrigger = false;
             _Rigidbody.isKinematic = false;
-            _Rigidbody.AddExplosionForce(99999f, center, 50f, 20f);
+            _Rigidbody.AddExplosionForce(999999f, center, 60f, 20f);
         }
     }
 
@@ -316,8 +316,9 @@ public class KatoManager : SerializedMonoBehaviour
             {
                 //explosion
                 var center = other.ClosestPoint(transform.position);
-                UniversalObjectPool.instance.GetObject<ECdestroyMe>(_ExplosionVFXPrefab, center, Quaternion.identity);
-                Collider[] hitColliders = Physics.OverlapSphere(other.ClosestPoint(transform.position), 50f);
+                var vfx = UniversalObjectPool.instance.GetObject<ECdestroyMe>(_ExplosionVFXPrefab, center, Quaternion.identity);
+                vfx.gameObject.SetActive(true);
+                Collider[] hitColliders = Physics.OverlapSphere(other.ClosestPoint(transform.position), 60f);
                 foreach (var hitCollider in hitColliders)
                 {
                     if (hitCollider.attachedRigidbody != null &&

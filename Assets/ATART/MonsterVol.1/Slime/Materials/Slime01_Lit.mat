@@ -153,7 +153,7 @@ Material:
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 0.94509804}
     - _Color: {r: 1, g: 1, b: 1, a: 0.94509804}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissionColor: {r: 0.41068643, g: 0.41068643, b: 0.41068643, a: 0}
     - _OutlineColor: {r: 0.23137257, g: 0.5764706, b: 0.70980394, a: 1}
     - _OutlineOffset: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}

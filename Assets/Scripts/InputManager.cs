@@ -8,8 +8,13 @@ public class InputManager : MonoBehaviour
     [SerializeField] private Vector2 _MinMaxXRotation = new Vector2(-90f, 90f);
     [SerializeField] private Vector2 _MinMaxZPosition = new Vector2(-300f, -70f);
 
-    private float _TouchDistance; 
-        
+    private float _TouchDistance;
+
+    public void CloseApplication()
+    {
+        Application.Quit();
+    }
+
     // Update is called once per frame
     void Update()
     {

@@ -21,6 +21,7 @@ public class ECdestroyMe : MonoBehaviour
 
         if(timer >= deathtimer)
         {
+	        timer = 0;
             gameObject.SetActive(false);
             UniversalObjectPool.instance.ReturnToPool(this);
         }
